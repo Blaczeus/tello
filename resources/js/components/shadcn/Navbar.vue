@@ -30,31 +30,11 @@ interface RouteProps {
   label: string;
 }
 
-interface FeatureProps {
-  title: string;
-  description: string;
-}
-
 const routeList: RouteProps[] = [
   { href: "/dashboard", label: "Dashboard" },
   { href: "/tasks", label: "My Tasks" },
   { href: "/projects", label: "Projects" },
   { href: "/teams", label: "Teams" },
-];
-
-const featureList: FeatureProps[] = [
-  {
-    title: "Create Tasks",
-    description: "Quickly create and manage your personal or team tasks.",
-  },
-  {
-    title: "Start Sprints",
-    description: "Organize work into sprints and track progress efficiently.",
-  },
-  {
-    title: "Assign Members",
-    description: "Collaborate by assigning tasks to teammates.",
-  },
 ];
 
 const isOpen = ref<boolean>(false);

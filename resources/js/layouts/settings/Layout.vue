@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import Heading from '@/components/Heading.vue';
-import { Button } from '@/components/ui/button';
 import { Button as ButtonShadcn } from '@/components/shadcn/ui/button';
 import { Separator } from '@/components/ui/separator';
 import { type NavItem } from '@/types';

@@ -36,9 +36,9 @@ const props = defineProps<{
       <!-- Stat Cards -->
       <div class="grid gap-4 md:grid-cols-3 auto-rows-min">
         <div v-for="card in [
-          { label: 'Pending Tasks', value: taskStats.pending, link: '/tasks?status=in_progress' },
-          { label: 'Total Tasks', value: taskStats.total, link: '/tasks' },
-          { label: 'Completed Tasks', value: taskStats.completed, link: '/tasks?status=completed' }
+          { label: 'Pending Tasks', value: props.taskStats.pending, link: '/tasks?status=in_progress' },
+          { label: 'Total Tasks', value: props.taskStats.total, link: '/tasks' },
+          { label: 'Completed Tasks', value: props.taskStats.completed, link: '/tasks?status=completed' }
         ]" :key="card.label"
           class="cursor-pointer transition hover:ring-1 hover:ring-brand-500 hover:scale-[1.01] bg-white border border-gray-200 dark:bg-white/5 dark:border-gray-800 shadow-theme-sm rounded-xl p-5"
           @click="$inertia.visit(card.link)">

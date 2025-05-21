@@ -125,7 +125,7 @@ const tabs = [
             <Link v-if="link.url" :href="link.url" class="px-3 py-1 rounded-md text-sm" :class="{
               'bg-orange-500 text-white': link.active,
               'text-gray-500 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white': !link.active,
-            }" v-html="link.label" />
+            }">{{ link.label }}</Link>
             <span v-else class="px-3 py-1 rounded-md text-sm text-gray-400 cursor-not-allowed" v-html="link.label" />
           </template>
         </div>

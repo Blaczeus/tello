@@ -57,7 +57,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import { Link } from '@inertiajs/vue3'
-import { Bars3Icon, CheckIcon, CalendarDaysIcon } from '@heroicons/vue/24/solid'
+import { Bars3Icon, CalendarDaysIcon } from '@heroicons/vue/24/solid'
 import { format, isToday, isTomorrow, parseISO } from 'date-fns'
 import { router } from '@inertiajs/vue3'
 

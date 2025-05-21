@@ -235,7 +235,7 @@ const socialIcon = (socialName: string) => {
         <CardFooter class="space-x-4 mt-auto">
           <a
             v-for="{ name, url } in socialNetworks"
-            key="name"
+            :key="name"
             :href="url"
             target="_blank"
             class="hover:opacity-80 transition-all"
