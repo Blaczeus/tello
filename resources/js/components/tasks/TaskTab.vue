@@ -1,18 +1,15 @@
 <template>
-  <div class="flex flex-wrap gap-2">
-    <button v-for="tab in tabs" :key="tab.value" @click="selectTab(tab.value)" :class="[
-      'inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-md transition',
-      isActive(tab.value)
+  <div class="flex w-full">
+    <button v-for="tab in tabs" :key="tab.value" @click="selectTab(tab.value)"
+      class="flex-1 inline-flex justify-center items-center gap-2 px-4 py-2 text-sm font-medium rounded-md transition whitespace-nowrap"
+      :class="isActive(tab.value)
         ? 'bg-white dark:bg-white/5 text-orange-600 dark:text-orange-400 ring-1 ring-transparent'
-        : 'group text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400',
-    ]">
+        : 'group text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400'">
       {{ tab.label }}
-      <span :class="[
-        'inline-flex rounded-full px-2 py-0.5 text-xs font-medium leading-normal',
-        isActive(tab.value)
+      <span class="inline-flex rounded-full px-2 py-0.5 text-xs font-medium leading-normal"
+        :class="isActive(tab.value)
           ? 'bg-orange-100 dark:bg-orange-400/10 text-orange-600 dark:text-orange-400'
-          : 'bg-white dark:bg-white/[0.05] text-gray-700 dark:text-white group-hover:text-orange-600 dark:group-hover:text-orange-400',
-      ]">
+          : 'bg-white dark:bg-white/[0.05] text-gray-700 dark:text-white group-hover:text-orange-600 dark:group-hover:text-orange-400'">
         {{ tab.count }}
       </span>
     </button>

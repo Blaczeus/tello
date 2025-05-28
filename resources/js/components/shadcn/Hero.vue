@@ -28,7 +28,7 @@ import { Link } from '@inertiajs/vue3';
           <span class="mr-2 text-[hsl(24.6_95%_53.1%)]">
             <Badge class="bg-[hsl(24.6_95%_53.1%)]">Beta</Badge>
           </span>
-          <span> TaskFlow is now live! </span>
+          <span> Tello is now live! </span>
         </Badge>
 
         <div class="max-w-screen-md mx-auto text-center text-5xl md:text-6xl font-bold relative z-10">
@@ -37,7 +37,7 @@ import { Link } from '@inertiajs/vue3';
             <span class="text-transparent bg-gradient-to-r from-[#D247BF] to-[hsl(24.6_95%_53.1%)] bg-clip-text">
               get things done
             </span>
-            with TaskFlow
+            with Tello
           </h1>
         </div>
 

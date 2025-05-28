@@ -21,7 +21,7 @@ const props = withDefaults(defineProps<Props>(), {
     :as-child="asChild"
     :class="cn(
       buttonVariants({ variant, size }),
-      'bg-[hsl(24.6,95%,53.1%)] text-white hover:bg-[hsl(24.6,95%,47%)] transition-colors duration-200 ease-in-out',
+      'bg-[hsl(24.6,95%,53.1%)] text-white hover:bg-[hsl(24.6,95%,47%)] transition-colors duration-200 ease-in-out ',
       props.class
     )"
   >

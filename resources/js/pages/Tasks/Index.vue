@@ -72,15 +72,15 @@ const tabs = [
         <div class="flex flex-col gap-4 xl:flex-row xl:items-center xl:justify-between w-full">
 
           <!-- Tabs Wrapper -->
-          <div class="flex justify-center w-full xl:w-auto">
-            <!-- Tabs -->
-            <div class="flex flex-wrap items-center gap-x-1 gap-y-2 rounded-lg p-1 bg-gray-100 dark:bg-white/5">
+          <div class="w-full overflow-x-auto xl:w-auto hidden sm:block">
+            <div class="flex items-center gap-x-1 p-1 rounded-md bg-gray-100 dark:bg-white/5 min-w-max">
               <TaskTab :tabs="tabs" v-model:active="activeTab" @update:active="handleTabChange" />
             </div>
           </div>
 
+
           <!-- Actions -->
-          <div class="flex flex-wrap justify-center xl:justify-end items-center gap-3 w-full xl:w-auto">
+          <div class="flex flex-wrap justify-center xl:justify-end items-stretch gap-3 w-full xl:w-auto">
             <!-- Filter Button -->
             <button v-if="props.counts.all >= 10" @click="showFilter = true" class="inline-flex items-center gap-2 rounded-lg border border-gray-300 px-4 py-2 text-sm font-medium 
          text-gray-700 shadow-theme-xs hover:text-orange-600 

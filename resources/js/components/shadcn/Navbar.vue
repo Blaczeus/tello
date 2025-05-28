@@ -46,13 +46,13 @@ const isOpen = ref<boolean>(false);
     'shadow-dark': mode === 'dark',
     'w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border z-40 rounded-2xl flex justify-between items-center p-2 bg-card shadow-md': true,
   }">
-      <!-- Logo -->
-      <a href="/" class="font-bold text-lg flex items-center">
-        <ChevronsDown
-          class="bg-gradient-to-tr from-[hsl(24.6_95%_53.1%)]/70 via-[hsl(24.6_95%_53.1%)] to-[hsl(24.6_95%_53.1%)]/70 rounded-lg size-9 mr-2 border text-white" />
+    <!-- Logo -->
+    <a href="/" class="font-bold text-lg flex items-center">
+      <ChevronsDown
+        class="bg-gradient-to-tr from-[hsl(24.6_95%_53.1%)]/70 via-[hsl(24.6_95%_53.1%)] to-[hsl(24.6_95%_53.1%)]/70 rounded-lg size-9 mr-2 border text-white" />
 
-        Tello
-      </a>
+      Tello
+    </a>
 
     <!-- Mobile Navigation -->
     <div class="flex items-center lg:hidden">
@@ -65,9 +65,11 @@ const isOpen = ref<boolean>(false);
           <div>
             <SheetHeader class="mb-4 ml-4">
               <SheetTitle class="flex items-center">
-                <a href="/" class="flex items-center">
+                <!-- Logo -->
+                <a href="/" class="font-bold text-lg flex items-center">
                   <ChevronsDown
-                    class="bg-gradient-to-tr from-primary/70 via-primary to-primary/70 rounded-lg size-9 mr-2 border text-white" />
+                    class="bg-gradient-to-tr from-[hsl(24.6_95%_53.1%)]/70 via-[hsl(24.6_95%_53.1%)] to-[hsl(24.6_95%_53.1%)]/70 rounded-lg size-9 mr-2 border text-white" />
+
                   Tello
                 </a>
               </SheetTitle>
@@ -108,8 +110,7 @@ const isOpen = ref<boolean>(false);
     <div class="hidden lg:flex items-center gap-2">
       <ToggleTheme />
       <Button as-child size="sm" variant="ghost" aria-label="View on GitHub">
-        <a href="https://github.com/blackzeus" target="_blank"
-          aria-label="View on GitHub">
+        <a href="https://github.com/blackzeus" target="_blank" aria-label="View on GitHub">
           <GithubIcon class="size-5" />
         </a>
       </Button>
